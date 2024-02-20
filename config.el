@@ -1,5 +1,5 @@
 ;; Doom theme
-(setq doom-theme 'doom-ir-black)
+(setq doom-theme 'deeper-blue)
 ;; Line Numbers
 (setq display-line-numbers-type t)
 ;; Org Directory
