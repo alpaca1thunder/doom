@@ -52,3 +52,4 @@
 (package! khalel)
 (package! puppet-mode)
 (package! org-roam)
+(package! git-auto-commit-mode)

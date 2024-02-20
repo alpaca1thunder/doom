@@ -7,7 +7,7 @@
 ;; Disable the Doom title
 (setq-default frame-title-format '("%f"))
 ;; Roam Directory
-(setq org-roam-directory (file-truename "~/org/roam"))
+(setq org-roam-directory (file-truename "~/roam/"))
 ;; Autosync Roam
 (org-roam-db-autosync-mode)
 ;; Prevent code blocks from evaluating
