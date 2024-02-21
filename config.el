@@ -1,5 +1,5 @@
 ;; Doom theme
-(setq doom-theme 'deeper-blue)
+(setq doom-theme 'doom-badger)
 ;; Line Numbers
 (setq display-line-numbers-type t)
 ;; Org Directory
@@ -33,9 +33,3 @@
 (add-hook 'sh-mode-hook 'flymake-shellcheck-load)
 ;; Fix tab with issue org
 (setq-default tab-width 8)
-;; Make org attach directory relative to folder
-(defun relative-org-attach-dir ()
-  (concat (file-name-directory (buffer-file-name)) ".attach/"))
-(advice-add 'org-attach-attach :before
-            (lambda (&rest args)
-              (setq-local org-attach-directory (relative-org-attach-dir))))
