@@ -24,9 +24,8 @@
 (setq safe-local-variable-values
    (quote
     ((buffer-read-only . 1))))
-;; crawl through all org files for agenda
-(with-eval-after-load 'org-agenda
-  (setq org-agenda-files '("~/org")))
+;; *recursively* crawl through all org files for agenda
+(setq org-agenda-files (directory-files-recursively "~/org/" "\\.org$"))
 ;; start org-agenda on start
 (add-hook 'after-init-hook 'org-agenda-list)
 ;; Shellcheck
