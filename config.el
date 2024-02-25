@@ -22,10 +22,6 @@
 (setq khalel-khal-command "khal")
 (setq khalel-vdirsyncer-command "vdirsyncer")
 (setq khalel-import-org-file-confirm-overwrite nil)
-;; I believe this prevents a khalel import prompt
-(setq safe-local-variable-values
-   (quote
-    ((buffer-read-only . 1))))
 ;; *recursively* crawl through all org files for agenda
 (setq org-agenda-files (directory-files-recursively "~/org/" "\\.org$"))
 ;; start org-agenda on start
