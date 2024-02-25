@@ -1,5 +1,7 @@
 ;; Doom theme
 (setq doom-theme 'doom-badger)
+;; Doom font
+(setq doom-font (font-spec :family "Terminus" :size 14))
 ;; Line Numbers
 (setq display-line-numbers-type t)
 ;; Org Directory
