@@ -26,7 +26,6 @@
 (setq org-agenda-files (directory-files-recursively "~/org/" "\\.org$"))
 ;; start org-agenda on start
 (add-hook 'after-init-hook 'org-agenda-list)
-(add-hook 'kill-emacs-hook 'khalel-import-events)
 ;; Shellcheck
 (add-hook 'sh-mode-hook 'flymake-shellcheck-load)
 ;; Fix tab with issue org
