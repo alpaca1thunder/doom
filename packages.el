@@ -53,3 +53,4 @@
 (package! puppet-mode)
 (package! org-roam)
 (package! git-auto-commit-mode)
+(package! org-journal)

@@ -10,6 +10,9 @@
 (setq-default frame-title-format '("%f"))
 ;; Roam Directory
 (setq org-roam-directory (file-truename "~/org/roam/"))
+;; Org Journal Directory
+(setq org-journal-dir (file-truename "~/org/journal/"))
+
 ;; Autosync Roam
 (org-roam-db-autosync-mode)
 ;; Prevent code blocks from evaluating
