@@ -31,5 +31,10 @@
 (add-hook 'after-init-hook 'org-agenda-list)
 ;; Shellcheck
 (add-hook 'sh-mode-hook 'flymake-shellcheck-load)
+;; Import khalel events on close--
+;; I would like call this on startup, however there's some issue with the way it
+;; gets loaded and it doesn't seem to display in my agenda until a restart. 
+;; This seems like an OK workaround.
+(add-hook 'kill-emacs-hook 'khalel-import-events)
 ;; Fix tab with issue org
 (setq-default tab-width 8)
