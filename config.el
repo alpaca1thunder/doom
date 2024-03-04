@@ -1,7 +1,8 @@
 ;; Doom theme
 (setq doom-theme 'doom-badger)
 ;; Doom font
-(setq doom-font (font-spec :family "Terminus" :size 14))
+(when (string-equal (system-name) "desktop")
+  (setq doom-font (font-spec :family "Terminus" :size 14)))
 ;; Line Numbers
 (setq display-line-numbers-type t)
 ;; Org Directory
@@ -12,7 +13,6 @@
 (setq org-roam-directory (file-truename "~/org/roam/"))
 ;; Org Journal Directory
 (setq org-journal-dir (file-truename "~/org/journal/"))
-
 ;; Autosync Roam
 (org-roam-db-autosync-mode)
 ;; Prevent code blocks from evaluating
