@@ -39,3 +39,5 @@
 (setq-default tab-width 8)
 ;; Auto push git auto commit
 (setq-default gac-automatically-push-p t)
+;; Enable org autolist
+(add-hook 'org-mode-hook (lambda () (org-autolist-mode)))
