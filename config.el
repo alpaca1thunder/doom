@@ -37,3 +37,5 @@
 (add-hook 'kill-emacs-hook 'khalel-import-events)
 ;; Fix tab with issue org
 (setq-default tab-width 8)
+;; Auto push git auto commit
+(setq-default gac-automatically-push-p t)
