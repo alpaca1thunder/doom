@@ -3,7 +3,7 @@
 ;; Doom font
 (when (string-equal (system-name) "desktop")
   (setq doom-font (font-spec :family "Terminus" :size 14))
-  (set-fontset-font t 'japanese-jisx0208 (font-spec :family "Noto Sans Mono CJK JP" :size 20)))
+  (set-fontset-font t 'japanese-jisx0208 (font-spec :family "KH Dot Kodenmachou 16 Ki" :size 16)))
 ;; Line Numbers
 (setq display-line-numbers-type t)
 ;; Org Directory
