@@ -54,3 +54,4 @@
 (package! org-roam)
 (package! git-auto-commit-mode)
 (package! org-autolist)
+(package! org-journal)
