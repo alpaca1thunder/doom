@@ -55,3 +55,4 @@
 (package! git-auto-commit-mode)
 (package! org-autolist)
 (package! org-journal)
+(package! crontab-mode)
