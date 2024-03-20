@@ -1,5 +1,5 @@
 ;; Doom theme
-(setq doom-theme 'doom-nord)
+(setq doom-theme 'doom-monokai-pro)
 ;; Doom font
 (when (string-equal (system-name) "desktop")
   (setq doom-font (font-spec :family "Terminus" :size 14))

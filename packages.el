@@ -56,3 +56,4 @@
 (package! org-autolist)
 (package! org-journal)
 (package! crontab-mode)
+(package! systemd)
