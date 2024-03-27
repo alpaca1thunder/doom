@@ -1,9 +1,13 @@
-;; Doom font
+;; Set specific fonts for your desktop
 (when (string-equal (system-name) "desktop")
-  ;; Doom theme
-  (setq doom-theme 'doom-nord)
-  (setq doom-font (font-spec :family "Terminus" :size 14))
-  (set-fontset-font t 'japanese-jisx0208 (font-spec :family "KH Dot Kodenmachou 16 Ki" :size 16)))
+  ;; Ensure the fonts are only run on new client frames
+  (add-hook 'after-make-frame-functions (lambda (frame) (with-selected-frame frame
+   ;; Doom theme
+   (setq doom-theme 'doom-nord)
+   ;; Doom font
+   (setq doom-font (font-spec :family "Terminus" :size 14))
+   ;; Monospace Japanese font
+   (set-fontset-font t 'japanese-jisx0208 (font-spec :family "KH Dot Kodenmachou 16 Ki" :size 16))))))
 ;; Line Numbers
 (setq display-line-numbers-type t)
 ;; Org Directory
