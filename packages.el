@@ -57,3 +57,5 @@
 (package! org-journal)
 (package! crontab-mode)
 (package! systemd)
+(unpin! org-roam)
+(package! org-roam-ui)
