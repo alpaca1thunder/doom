@@ -48,6 +48,7 @@
 ;; (unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;; (unpin! t)
+(unpin! org-roam)
 (package! ranger)
 (package! khalel)
 (package! puppet-mode)
@@ -57,5 +58,4 @@
 (package! org-journal)
 (package! crontab-mode)
 (package! systemd)
-(unpin! org-roam)
 (package! org-roam-ui)
