@@ -64,3 +64,14 @@
           org-roam-ui-follow t
           org-roam-ui-update-on-save t
           org-roam-ui-open-on-start t))
+;; "Flyspell with Hunspell on buffer with Japanese
+;; https://www.emacswiki.org/emacs/FlySpell#h5o-15
+(defvar ispell-regexp-ja "[一-龠ぁ-🈀ァ-𛀀ー・、。々]+"
+  "Regular expression to match a Japanese word.
+The expression can be [^\000-\377]+, [^!-~]+, or [一-龠ぁ-🈀ァ-𛀀ー・、。々]+")
+;; (add-to-list 'ispell-skip-region-alist (list ispell-regexp-ja))
+(defun flyspell-skip-ja (beg end info)
+  "Tell flyspell to skip a Japanese word.
+Call this on `flyspell-incorrect-hook'."
+  (string-match ispell-regexp-ja (buffer-substring beg end)))
+(add-hook 'flyspell-incorrect-hook 'flyspell-skip-ja)
