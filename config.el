@@ -75,3 +75,5 @@ The expression can be [^\000-\377]+, [^!-~]+, or [一-龠ぁ-🈀ァ-𛀀ー・�
 Call this on `flyspell-incorrect-hook'."
   (string-match ispell-regexp-ja (buffer-substring beg end)))
 (add-hook 'flyspell-incorrect-hook 'flyspell-skip-ja)
+;; valign hook
+(add-hook 'org-mode-hook #'valign-mode)
