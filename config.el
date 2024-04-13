@@ -42,11 +42,7 @@
 ;; I would like call this on startup, however there's some issue with the way it
 ;; gets loaded and it doesn't seem to display in my agenda until a restart. 
 ;; This seems like an OK workaround.
-(add-hook 'kill-emacs-hook
-          (lambda ()
-            (when (string-equal (system-name) "laptop")
-              (khalel-run-vdirsyncer))
-            (khalel-import-events)))
+(add-hook 'kill-emacs-hook 'khalel-import-events)
 ;; Fix tab with issue org
 (setq-default tab-width 8)
 ;; Auto push git auto commit
