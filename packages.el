@@ -59,3 +59,4 @@
 (package! systemd)
 (package! org-roam-ui)
 (package! valign)
+(package! gptel)
