@@ -81,3 +81,7 @@ Call this on `flyspell-incorrect-hook'."
 (setq gptel-api-key (shell-command-to-string "bw get password d0cac8bb-14d4-4b5a-b371-b14500e2f1c5"))
 (setq gptel-default-mode 'org-mode)
 (setq gptel-model "gpt-4")
+;; Fix evil search
+;; https://github.com/doomemacs/doomemacs/issues/6478#issuecomment-1406167570
+(setq org-fold-core-style 'overlays)
+(evil-select-search-module 'evil-search-module 'evil-search)
