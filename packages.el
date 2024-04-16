@@ -60,3 +60,4 @@
 (package! org-roam-ui)
 (package! valign)
 (package! gptel)
+(package! puppet-mode)
