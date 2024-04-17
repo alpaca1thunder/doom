@@ -5,9 +5,9 @@
    ;; Doom theme
    (setq doom-theme 'doom-nord)
    ;; Doom font
-   (setq doom-font (font-spec :family "UbuntuMono Nerd Font Mono" :size 15))))))
+   (setq doom-font (font-spec :family "UbuntuMono Nerd Font Mono" :size 15))
    ;; Monospace Japanese font
-(set-fontset-font t 'japanese-jisx0208 (font-spec :family "Noto Sans CJK JP" :size 24))
+(set-fontset-font t 'japanese-jisx0208 (font-spec :family "Noto Sans CJK JP" :size 24))))))
 ;; Line Numbers
 (setq display-line-numbers-type t)
 ;; Org Directory
