@@ -5,7 +5,7 @@
    ;; Doom theme
    (setq doom-theme 'doom-nord)
    ;; Doom font
-   (setq doom-font (font-spec :family "UbuntuMono Nerd Font Mono" :size 18))
+   (setq doom-font (font-spec :family "UbuntuMono Nerd Font Mono" :size 17))
    ;; Monospace Japanese font
    (set-fontset-font t 'japanese-jisx0208 (font-spec :family "Noto Sans CJK JP" :size 23))))))
 ;; Set monospace Japanese font even when not running as a client/daemon
