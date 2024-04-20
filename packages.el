@@ -59,5 +59,7 @@
 (package! systemd)
 (package! org-roam-ui)
 (package! valign)
-(package! gptel)
+(package! gptel
+  :recipe (:host github :repo "suzuki/gptel" :branch "add-gpt-4-turbo")
+  :pin "26494197836dfdce9b7910a39c1f1f6f573a68df")
 (package! puppet-mode)
