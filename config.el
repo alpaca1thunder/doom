@@ -51,7 +51,7 @@
 (setq-default gac-automatically-push-p t)
 ;; Enable org autolist
 (add-hook 'org-mode-hook (lambda () (org-autolist-mode)))
-;; pasted from org-roam-ui docs
+;; pasted verbatim from org-roam-ui docs
 (use-package! websocket
     :after org-roam)
 
