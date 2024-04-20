@@ -5,11 +5,11 @@
    ;; Doom theme
    (setq doom-theme 'doom-nord)
    ;; Doom font
-   (setq doom-font (font-spec :family "UbuntuMono Nerd Font Mono" :size 15))
+   (setq doom-font (font-spec :family "UbuntuMono Nerd Font Mono" :size 18))
    ;; Monospace Japanese font
-   (set-fontset-font t 'japanese-jisx0208 (font-spec :family "Noto Sans CJK JP" :size 24))))))
+   (set-fontset-font t 'japanese-jisx0208 (font-spec :family "Noto Sans CJK JP" :size 23))))))
 ;; Set monospace Japanese font even when not running as a client/daemon
-(set-fontset-font t 'japanese-jisx0208 (font-spec :family "Noto Sans CJK JP" :size 24))
+(set-fontset-font t 'japanese-jisx0208 (font-spec :family "Noto Sans CJK JP" :size 23))
 ;; Line Numbers
 (setq display-line-numbers-type t)
 ;; Org Directory
@@ -87,3 +87,5 @@ Call this on `flyspell-incorrect-hook'."
 ;; https://github.com/doomemacs/doomemacs/issues/6478#issuecomment-1406167570
 (setq org-fold-core-style 'overlays)
 (evil-select-search-module 'evil-search-module 'evil-search)
+;; Cute strike-through for done org tasks
+(set-face-attribute 'org-headline-done nil :strike-through t)
