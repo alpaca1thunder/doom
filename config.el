@@ -89,3 +89,5 @@ Call this on `flyspell-incorrect-hook'."
 (evil-select-search-module 'evil-search-module 'evil-search)
 ;; Cute strike-through for done org tasks
 (set-face-attribute 'org-headline-done nil :strike-through t)
+;; Shortcut to go back when hitting roam links
+(define-key org-mode-map (kbd "C-c m") 'org-mark-ring-goto)
