@@ -90,7 +90,7 @@ Call this on `flyspell-incorrect-hook'."
 ;; Cute strike-through for done org tasks
 (set-face-attribute 'org-headline-done nil :strike-through t)
 ;; Shortcut to go back when hitting roam links
-(define-key org-mode-map (kbd "C-c m") 'org-mark-ring-goto)
+(define-key org-mode-map (kbd "s-h") 'org-mark-ring-goto)
 ;; org-roam shortcuts
 (define-key global-map (kbd "C-c f") 'org-roam-node-find)
 (define-key global-map (kbd "C-c i") 'org-roam-node-insert)
