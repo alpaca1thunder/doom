@@ -95,3 +95,4 @@ Call this on `flyspell-incorrect-hook'."
 ;; org-roam shortcuts
 (define-key global-map (kbd "C-c f") 'org-roam-node-find)
 (define-key global-map (kbd "C-c i") 'org-roam-node-insert)
+(define-key global-map (kbd "C-c t") 'org-roam-dailies-goto-today)
