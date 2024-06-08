@@ -9,7 +9,7 @@
    ;; Monospace Japanese font
    (set-fontset-font t 'japanese-jisx0208 (font-spec :family "Noto Sans CJK JP" :size 46)))))
    ;; Use bws for key on desktop
-   (setq gptel-api-key (shell-command-to-string "bws secret get 814a10bd-0645-4071-b2ba-b18900b4b658 | jq '.value' -r")))
+   (setq gptel-api-key (string-trim (shell-command-to-string "bws secret get 814a10bd-0645-4071-b2ba-b18900b4b658 | jq '.value' -r"))))
 (when (string-equal (system-name) "laptop")
    ;; Use bw for key on laptop
    (setq gptel-api-key (shell-command-to-string "bw get password d0cac8bb-14d4-4b5a-b371-b14500e2f1c5")))
@@ -85,7 +85,6 @@ Call this on `flyspell-incorrect-hook'."
 ;; valign hook
 (add-hook 'org-mode-hook #'valign-mode)
 ;; gptel
-(setq gptel-api-key (shell-command-to-string "bw get password d0cac8bb-14d4-4b5a-b371-b14500e2f1c5"))
 (setq gptel-default-mode 'org-mode)
 (setq gptel-model "gpt-4o")
 ;; Fix evil search
