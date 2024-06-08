@@ -7,12 +7,7 @@
    ;; Doom font
    (setq doom-font (font-spec :family "Terminus" :size 32))
    ;; Monospace Japanese font
-   (set-fontset-font t 'japanese-jisx0208 (font-spec :family "Noto Sans CJK JP" :size 46)))))
-   ;; Use bws for key on desktop
-   (setq gptel-api-key (shell-command-to-string "bws secret get 814a10bd-0645-4071-b2ba-b18900b4b658 | jq '.value' -r")))
-(when (string-equal (system-name) "laptop")
-   ;; Use bw for key on laptop
-   (setq gptel-api-key (shell-command-to-string "bw get password d0cac8bb-14d4-4b5a-b371-b14500e2f1c5")))
+   (set-fontset-font t 'japanese-jisx0208 (font-spec :family "Noto Sans CJK JP" :size 46))))))
 ;; Set monospace Japanese font even when not running as a client/daemon
 (set-fontset-font t 'japanese-jisx0208 (font-spec :family "Noto Sans CJK JP" :size 23))
 ;; Line Numbers
