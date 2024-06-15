@@ -54,6 +54,7 @@
 (package! org-roam)
 (package! git-auto-commit-mode)
 (package! org-autolist)
+(package! org-journal)
 (package! crontab-mode)
 (package! systemd)
 (package! org-roam-ui)
