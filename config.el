@@ -76,7 +76,7 @@ Call this on `flyspell-incorrect-hook'."
 ;; valign hook
 (add-hook 'org-mode-hook #'valign-mode)
 ;; gptel
-(setq gptel-api-key (string-trim (shell-command-to-string "bw get password d0cac8bb-14d4-4b5a-b371-b14500e2f1c5"))j)
+(setq gptel-api-key (string-trim (shell-command-to-string "bw get password d0cac8bb-14d4-4b5a-b371-b14500e2f1c5")))
 (setq gptel-default-mode 'org-mode)
 (setq gptel-model "gpt-4o")
 ;; Fix evil search
