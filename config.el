@@ -92,3 +92,5 @@ Call this on `flyspell-incorrect-hook'."
 (define-key global-map (kbd "C-c f") 'org-roam-node-find)
 (define-key global-map (kbd "C-c i") 'org-roam-node-insert)
 (define-key global-map (kbd "C-c t") 'org-roam-dailies-goto-today)
+;; gptel shortcut
+(define-key global-map (kbd "C-c e") 'gptel)
