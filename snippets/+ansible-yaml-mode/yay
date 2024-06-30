@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Install packages using yay
+# key: kewlfft_aur_aur
+# condition: ansible
+# --
+- name: Install packages
+  become: true
+  become_user: aur_builder
+  kewlfft.aur.aur:
+    use: yay
+    name: "{{ item }}"
+  with_items:
